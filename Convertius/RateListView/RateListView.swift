@@ -11,10 +11,8 @@ struct RateListView: View {
     @ObservedObject var rateViewModel = RateListViewModel()
     
     var body: some View {
-        VStack() {
-            List($rateViewModel.rates.indices, id: \.self) { index in
-                RateView(rateViewModel: rateViewModel, index: index)
-            }
+        List($rateViewModel.rates.indices, id: \.self) { index in
+            RateView(rateViewModel: rateViewModel, index: index)
         }
     }
 }

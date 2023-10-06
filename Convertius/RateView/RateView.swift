@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RateView: View {
     @ObservedObject var rateViewModel: RateListViewModel
+    @FocusState private var isFocused: Bool
     var index: Int
     
     var body: some View {
@@ -23,8 +24,6 @@ struct RateView: View {
                     .font(.caption)
             }
             
-            Spacer()
-            
             TextField("0.0", text: Binding(
                 get: { String(rateViewModel.rates[index].amount) },
                 set: { newValue in
@@ -32,10 +31,14 @@ struct RateView: View {
                     rateViewModel.updateAmounts(from: rateViewModel.rates[index])
                 }
             ))
+            .multilineTextAlignment(.trailing)
             .font(.title2)
             .bold()
+            .focused($isFocused)
             .keyboardType(.decimalPad)
-            .fixedSize()
+        }
+        .onTapGesture {
+            isFocused = true
         }
     }
 }
