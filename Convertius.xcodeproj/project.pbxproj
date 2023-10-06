@@ -11,6 +11,7 @@
 		292D30152AD0283A00CB71C6 /* RateListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292D300D2AD0283A00CB71C6 /* RateListView.swift */; };
 		292D30162AD0283A00CB71C6 /* RateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292D300F2AD0283A00CB71C6 /* RateView.swift */; };
 		292D30172AD0283A00CB71C6 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292D30102AD0283A00CB71C6 /* Rate.swift */; };
+		292D30192AD02B9E00CB71C6 /* Double+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292D30182AD02B9E00CB71C6 /* Double+Extention.swift */; };
 		29D370042ACF1231006CA4E8 /* ConvertiusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D370032ACF1231006CA4E8 /* ConvertiusApp.swift */; };
 		29D370062ACF1231006CA4E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D370052ACF1231006CA4E8 /* ContentView.swift */; };
 		29D370082ACF1232006CA4E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29D370072ACF1232006CA4E8 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		292D300D2AD0283A00CB71C6 /* RateListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateListView.swift; sourceTree = "<group>"; };
 		292D300F2AD0283A00CB71C6 /* RateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateView.swift; sourceTree = "<group>"; };
 		292D30102AD0283A00CB71C6 /* Rate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
+		292D30182AD02B9E00CB71C6 /* Double+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extention.swift"; sourceTree = "<group>"; };
 		29D370002ACF1231006CA4E8 /* Convertius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Convertius.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D370032ACF1231006CA4E8 /* ConvertiusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertiusApp.swift; sourceTree = "<group>"; };
 		29D370052ACF1231006CA4E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				292D300C2AD0283A00CB71C6 /* RateListViewModel.swift */,
+				292D30182AD02B9E00CB71C6 /* Double+Extention.swift */,
 				292D300D2AD0283A00CB71C6 /* RateListView.swift */,
 			);
 			path = RateListView;
@@ -173,6 +176,7 @@
 				292D30142AD0283A00CB71C6 /* RateListViewModel.swift in Sources */,
 				292D30172AD0283A00CB71C6 /* Rate.swift in Sources */,
 				29D370042ACF1231006CA4E8 /* ConvertiusApp.swift in Sources */,
+				292D30192AD02B9E00CB71C6 /* Double+Extention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

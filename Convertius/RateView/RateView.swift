@@ -26,9 +26,9 @@ struct RateView: View {
             Spacer()
             
             TextField("0.0", text: Binding(
-                get: { rateViewModel.rates[index].amount },
+                get: { String(rateViewModel.rates[index].amount) },
                 set: { newValue in
-                    rateViewModel.rates[index].amount = newValue
+                    rateViewModel.rates[index].amount = Double(newValue) ?? 0
                     rateViewModel.updateAmounts(from: rateViewModel.rates[index])
                 }
             ))
