@@ -24,10 +24,10 @@ struct RateView: View {
                     .font(.caption)
             }
             
-            TextField("0.0", text: Binding(
-                get: { String(rateViewModel.rates[index].amount) },
+            TextField("0.69", text: Binding(
+                get: { rateViewModel.rates[index].amount ?? "" },
                 set: { newValue in
-                    rateViewModel.rates[index].amount = Double(newValue) ?? 0
+                    rateViewModel.rates[index].amount = newValue
                     rateViewModel.updateAmounts(from: rateViewModel.rates[index])
                 }
             ))
@@ -38,6 +38,9 @@ struct RateView: View {
             .keyboardType(.decimalPad)
         }
         .onTapGesture {
+            rateViewModel.clearList()
+            rateViewModel.rates[index].amount = ""
+            rateViewModel.updateAmounts(from: rateViewModel.rates[index])
             isFocused = true
         }
     }
